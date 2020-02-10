@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recurso>
+    <titulo>Teste Mapinha</titulo>
+    <descricao>Teste.</descricao>
+    <estado>testes</estado>
+    <imagem>teste.jpg</imagem>
+	<tipo>Teste</tipo>
+	<objetivos>teste.</objetivos>
+	<observacoes>Teste.</observacoes>
+	<nivel>Ensino Médio</nivel>
+	<componente>Matemática / Física</componente>
+	<temas>Geometria / Som, Imagem e Informação</temas>
+	<autores>Samuel Rocha de Oliveira, Leonardo Barichello</autores>
+	<palavras_chaves>Unicamp, Projeto M³, software educacional, matemática, trigonometria, seno, raios luminosos, refração, lei de snell, princípio de fermat</palavras_chaves>
+	<assunto></assunto>
+</recurso>

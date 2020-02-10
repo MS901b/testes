@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/abertura.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/popup.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="css/mapinha.css" media="screen, projection" />
+    <script type="text/javascript" src="scripts/AC_RunActiveContent.js"></script>
+    <script type="text/javascript" src="scripts/protoaculous.js"></script>
+    <script type="text/javascript" src="scripts/salvaLocal.js"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+    <script type="text/javascript" src="scripts/m3_geral.js"></script>
+    <script type="text/javascript" src="scripts/mapinha.js"></script>
+
+    <title>Teste</title>
+    <script type="text/javascript">
+        var nomeSoft = 'test';
+        var Perguntas = $H({
+            limpar: {
+                conteudo: '<p>Isso irá apagar todos os dados armazenados, como respostas guardadas, para essa unidade.</p><p style="margin-top:10px;">Você tem certeza?</p>',
+                layout: ['seta_cima', 'direita'],
+                largura: 10,
+                callback: resetar,
+                // se o usuário clicar em 'Sim', o popup chamará a funcao funcao_pede na qual this.resultado será 'sim'
+                // Veja que essa função deve estar definida, ou ser definida nesse exato momento (como no exemplo "pede2")
+                respostas: [{
+                    sim: 'Sim'
+                }, {
+                    nao: 'Não'
+                }]
+            }
+        });
+
+        function resetar() {
+            if (this.resultado == 'sim') {
+                $('SalvaLocal').ApagaTudo(nomeSoft);
+                location.reload();
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecalho">
+            <div id="onde_estou">
+                <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                <h2>Mapa de atividades</h2>
+            </div>
+            <div id="logo"></div>
+            <div id="links">
+                <span>Mapa</span>
+            </div>
+
+            <br class="limpador" />
+        </div>
+
+        <div id="abertura">
+            <div id="conteudo">
+                Atividade 1:<input type="text" id="a1" style="width: 32px; border: 2px solid #000000"> Atividade 2:<input type="text" id="a2" style="width: 32px; border: 2px solid #000000"> Atividade 3:<input type="text" id="a3" style="width: 32px; border: 2px solid #000000">                Atividade 4:<input type="text" id="a4" style="width: 32px; border: 2px solid #000000"> Transição: <input type="text" id="t1" style="width: 32px; border: 2px solid #000000"> Desafio: <input type="text" id="d1" style="width: 32px; border: 2px solid #000000">
+                <a id="limpar" style="position:absolute; right:20px; top: 20px; color:RGB(210,25,42); font-weight:bold; ">Limpar
+                        dados</a>
+
+
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_comomontardieta</h2>
+                    </div>
+                </div>
+                <div id="conteudo_comomontardieta"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_comprarmoto</h2>
+                    </div>
+                </div>
+                <div id="conteudo_comprarmoto"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_corridanolado</h2>
+                    </div>
+                </div>
+                <div id="conteudo_corridanolado"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_crescimentopopulacional</h2>
+                    </div>
+                </div>
+                <div id="conteudo_crescimentopopulacional"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_curvaslissajous</h2>
+                    </div>
+                </div>
+                <div id="conteudo_curvaslissajous"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_determinantesareas</h2>
+                    </div>
+                </div>
+                <div id="conteudo_determinantesareas"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_determinantespoligonos</h2>
+                    </div>
+                </div>
+                <div id="conteudo_determinantespoligonos"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_jogomaximo</h2>
+                    </div>
+                </div>
+                <div id="conteudo_jogomaximo"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_medidasboxplot</h2>
+                    </div>
+                </div>
+                <div id="conteudo_medidasboxplot"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_medidasdispersao</h2>
+                    </div>
+                </div>
+                <div id="conteudo_medidasdispersao"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_medidasunivariados</h2>
+                    </div>
+                </div>
+                <div id="conteudo_medidasunivariados"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_movimentoscomplexos</h2>
+                    </div>
+                </div>
+                <div id="conteudo_movimentoscomplexos"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_ondastrigonometrics</h2>
+                    </div>
+                </div>
+                <div id="conteudo_ondastrigonometrics"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_otimizacaojanelas</h2>
+                    </div>
+                </div>
+                <div id="conteudo_otimizacaojanelas"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_trigonometriahalos</h2>
+                    </div>
+                </div>
+                <div id="conteudo_trigonometriahalos"></div>
+
+                <div id="cabecalho">
+                    <div id="onde_estou">
+                        <h1>Teste</h1> <img src="img_layout/setinha-cabecalho.gif" alt="" />
+                        <h2>conteudo_trigonometriaraios</h2>
+                    </div>
+                </div>
+                <div id="conteudo_trigonometriaraios"></div>
+
+
+
+            </div>
+        </div>
+        <br class="limpador" />
+        <div id="rodape">
+            <a href="http://​m3.ime.unicamp.br" target="_blank">Sobre o Matemática Multimídia</a>
+        </div>
+    </div>
+
+    <script>
+        $('a1').value = getResp('atividade_1');
+        $('a2').value = getResp('atividade_2');
+        $('a3').value = getResp('atividade_3');
+        $('a4').value = getResp('atividade_4');
+        $('t1').value = getResp('transicao_1');
+        $('d1').value = getResp('desafio_1');
+
+        Event.observe('a1', 'change', function(evento) {
+            setResp('atividade_1', $('a1').value);
+        });
+        Event.observe('a2', 'change', function(evento) {
+            setResp('atividade_2', $('a2').value);
+        });
+        Event.observe('a3', 'change', function(evento) {
+            setResp('atividade_3', $('a3').value);
+        });
+        Event.observe('a4', 'change', function(evento) {
+            setResp('atividade_4', $('a4').value);
+        });
+        Event.observe('t1', 'change', function(evento) {
+            setResp('transicao_1', $('t1').value);
+        });
+        Event.observe('d1', 'change', function(evento) {
+            setResp('desafio_1', $('d1').value);
+        });
+
+
+
+
+        fetch("estruturas/estrutura_comomontardieta.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_comomontardieta", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_comprarmoto.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_comprarmoto", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_corridanolado.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_corridanolado", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_crescimentopopulacional.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_crescimentopopulacional", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_curvaslissajous.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_curvaslissajous", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_determinantesareas.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_determinantesareas", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_determinantespoligonos.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_determinantespoligonos", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_jogomaximo.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_jogomaximo", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_medidasboxplot.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_medidasboxplot", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_medidasdispersao.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_medidasdispersao", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_medidasunivariados.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_medidasunivariados", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_movimentoscomplexos.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_movimentoscomplexos", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_ondastrigonometrics.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_ondastrigonometrics", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_otimizacaojanelas.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_otimizacaojanelas", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_trigonometriahalos.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_trigonometriahalos", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+
+        fetch("estruturas/estrutura_trigonometriaraios.xml")
+            .then(function(response) {
+                response.text().then(function(data) {
+                    const m = new Mapinha("conteudo_trigonometriaraios", nomeSoft);
+                    m.parseXml(data);
+                    m.adicionaBotoesItens();
+                });
+            })
+            .catch(function(err) {
+                console.error('Failed retrieving information', err);
+            });
+    </script>
+</body>
+
+</html>
